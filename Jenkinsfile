@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 72db0b3 (Edit Jenkins file and main.tf)
 pipeline{
     agent any
     stages{
