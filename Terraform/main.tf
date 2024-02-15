@@ -11,18 +11,19 @@ terraform {
 provider "azurerm" {
   features {}
 }
-data "azurerm_subscription" "current" {
+
+resource "azurerm_resource_group" "ODL-azure-1231380" {
+  name     = "ODL-azure-1231380"
+  location = "East US"  # Update with the correct location for your resource group
+
+  # (other resource arguments)
 }
 
-resource "azurerm_resource_group" "resource-group" {
-  name     = "ODL-azure-1231380"
-  location = "East US"
-}
 
 resource "azurerm_network_security_group" "network-security-group" {
   name                = "default-security-group"
   location            = azurerm_resource_group.resource-group.location
-  resource_group_name = azurerm_resource_group.resource-group.name
+  resource_group_name = azurerm_resource_group.resource-group
 }
 
 resource "azurerm_network_security_rule" "nsr-1" {
