@@ -15,7 +15,7 @@ data "azurerm_subscription" "current" {
 }
 
 resource "azurerm_resource_group" "resource-group" {
-  name     = "VirtualMachine1"
+  name     = "ODL-azure-1231380"
   location = "West Europe"
 }
 
