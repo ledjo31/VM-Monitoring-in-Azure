@@ -123,16 +123,16 @@ resource "azurerm_linux_virtual_machine" "linux-virtual-machine" {
   location                        = azurerm_resource_group.resource-group.location
   size                            = "Standard_B2s" 
   computer_name                   = "VirtualMachine"
-  admin_username                  = "louaykharouf"
-  admin_password                  = "PassStudent123"
+  admin_username                  = "ledjo"
+  admin_password                  = "ledjo2024"
   disable_password_authentication = false
   network_interface_ids = [
     azurerm_network_interface.network-interface.id,
   ]
 connection {
     type     = "ssh"
-    user     = "louaykharouf"
-    password = "PassStudent123"
+    user     = "ledjo"
+    password = "ledjo2024"
     host     = azurerm_linux_virtual_machine.linux-virtual-machine.public_ip_address
 
   }
