@@ -6,8 +6,8 @@
     ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
     resource_group_name: pfa
     vm_name: "VirtualMachine"
-    ansible_user: "louaykharouf"
-    ansible_ssh_pass: "PassStudent123"
+    ansible_user: "ledjo"
+    ansible_ssh_pass: "ledjo2024"
   tasks: 
   - name: trigger the API
     shell: az vm show -d -g VirtualMachine1 -n {{ vm_name }} --query publicIps -o tsv
