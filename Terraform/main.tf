@@ -16,7 +16,7 @@ data "azurerm_subscription" "current" {
 
 resource "azurerm_resource_group" "resource-group" {
   name     = "ODL-azure-1231380"
-  location = "West Europe"
+  location = "East US"
 }
 
 resource "azurerm_network_security_group" "network-security-group" {
