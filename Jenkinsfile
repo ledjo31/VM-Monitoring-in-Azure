@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 72db0b3 (Edit Jenkins file and main.tf)
 pipeline{
     agent any
     stages{
@@ -74,3 +79,7 @@ pipeline{
             echo "========pipeline execution failed========"
         }
     }*/
+<<<<<<< HEAD
+=======
+>>>>>>> 01cbca0 (Edit Jenkins file and main.tf)
+>>>>>>> 72db0b3 (Edit Jenkins file and main.tf)
