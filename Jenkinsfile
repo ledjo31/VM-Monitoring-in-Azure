@@ -28,7 +28,8 @@ pipeline{
                        /* sh "az upgrade --yes"
                         sh "az login"*/
                         sh "terraform init"
-                        sh "terraform apply --auto-approve --var-file=/var/jenkins_home/workspace/VM-Monitoring/Terraform/terraform.tfvars.json"
+ /*                       sh "terraform apply --auto-approve --var-file=/var/jenkins_home/workspace/VM-Monitoring/Terraform/terraform.tfvars.json" */
+                        sh "terraform apply --auto-approve
                          }    }        
                         }
                     } 
